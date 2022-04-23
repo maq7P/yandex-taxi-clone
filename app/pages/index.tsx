@@ -1,11 +1,8 @@
 import type {NextPage} from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import Home from '../src/screens/home/Home';
 
-const Home: NextPage = () => {
-  return (
-    <div>app</div>
-  )
+const HomePage: NextPage = () => {
+  return <Home/>
 }
 
-export default Home
+export default HomePage
