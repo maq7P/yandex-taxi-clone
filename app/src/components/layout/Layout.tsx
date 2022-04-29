@@ -1,7 +1,7 @@
 import { FC, useState, useEffect  } from "react";
 import Script from 'next/script';
 
-import Loader from "../../ui/Loader";
+import Loader from "../ui/Loader";
 
 import Seo from "./Seo";
 
@@ -29,9 +29,10 @@ const Layout:FC<ILayout> = ({children}) => {
       />
 
       <div 
-        style={{maxWidth: 480}} 
+        style={{maxWidth: 480, maxHeight: 900}}
         className="mx-auto relative overflow-hidden"
       >
+        adas
         {isLoading ? <Loader/>: children}
       </div>
 
